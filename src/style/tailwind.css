@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+html[data-mode='dark'],
+html[data-mode='dark'] body {
+  @apply bg-slate-800 text-white;
+}
+
+body {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,7 @@
+node_modules/
+.github/
+.storybook/
+build/
+cypress/reports/
+# will refactor the complicated player.js later
+src/components/CustomCanvas/player.js

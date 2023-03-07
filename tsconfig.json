@@ -1,0 +1,152 @@
+{
+  "compilerOptions": {
+    // *** Type Checking ***
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "alwaysStrict": true,
+    // "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noImplicitAny": true,
+    // "noImplicitOverride": true|false,
+    "noImplicitThis": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // "noUncheckedIndexedAccess": true, // will add undefined to any un-declared field in the type
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    // "useUnknownInCatchVariables": false,
+    // *** Modules ***
+    // "allowUmdGlobalAccess":
+    "baseUrl": "src",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    // "noResolve":
+    //    "paths": {
+    //      "@/*": ["src/*"]
+    //    },
+    "resolveJsonModule": true,
+    // "rootDir":
+    // "rootDirs"
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    // "types"
+    // *** Emit ***
+    "declaration": false,
+    // "declarationDir":
+    // "declarationMap":
+    // "downlevelIteration":
+    // "emitBOM":
+    // "emitDeclarationOnly":
+    // "importHelpers":
+    // "importsNotUsedAsValues":
+    // "inlineSourceMap":
+    // "inlineSources":
+    // "mapRoot":
+    "newLine": "lf",
+    // "noEmit":
+    // "noEmitHelpers":
+    "noEmitOnError": false,
+    // without it, webpack wouldn't resolve vue files without extension
+    // "outDir":
+    // "outFile":
+    // "preserveConstEnums":
+    // "preserveValueImports":
+    // "removeComments":
+    "sourceMap": true,
+    // "sourceRoot":
+    // "stripInternal":
+    // *** JavaScript Support ***
+    "allowJs": true,
+    // "checkJs"
+    // "maxNodeModuleJsDepth"
+    // *** Editor Support ***
+    // "disableSizeLimit"
+    // "plugins"
+    // *** Interop Constraints ***
+    "allowSyntheticDefaultImports": true,
+    // "esModuleInterop":
+    "forceConsistentCasingInFileNames": true,
+    // "isolatedModules":
+    // "preserveSymlinks":
+    "noImplicitReturns": true,
+    // *** Backwards Compatibility ***
+    // "charset":
+    // "keyofStringsOnly":
+    // "noImplicitUseStrict":
+    // "noStrictGenericChecks":
+    // "out":
+    // "suppressExcessPropertyErrors":
+    // "suppressImplicitAnyIndexErrors":
+    // *** Language and Environment ***
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    // "jsxFactory":
+    // "jsxFragmentFactory":
+    // "jsxImportSource":
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    // "noLib":
+    // "reactNamespace":
+    "target": "es6",
+    // "useDefineForClassFields":
+    // *** Compiler Diagnostics ***
+    // "diagnostics":
+    // "explainFiles":
+    // "extendedDiagnostics":
+    // "generateCpuProfile":
+    // "listEmittedFiles":
+    // "listFiles":
+    // "traceResolution":
+    // *** Projects ***
+    // "composite":
+    // "disableReferencedProjectLoad":
+    // "disableSolutionSearching":
+    // "disableSourceOfProjectReferenceRedirect":
+    // "incremental":
+    // "tsBuildInfoFile":
+    // *** Output Formatting ***
+    // "noErrorTruncation":
+    // "preserveWatchOutput":
+    "pretty": true
+    // *** Completeness ***
+    // "skipDefaultLibCheck":
+    // "skipLibCheck":
+    // *** Command Line ***
+    // *** Watch Options ***
+    // "assumeChangesOnlyAffectDirectDependencies":
+  },
+  // *** "watchOptions" ***
+  // "watchOptions": {
+  // *** watchOptions ***
+  // "watchFile":
+  // "watchDirectory":
+  // "fallbackPolling":
+  // "synchronousWatchDirectory":
+  // "excludeDirectories":
+  // "excludeFiles":
+  // }
+  // *** "typeAcquisition" ***
+  // *** typeAcquisition ***
+  // "enable":
+  "include": [
+    "src"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+  // "disableFilenameBasedTypeAcquisition":
+}

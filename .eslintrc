@@ -1,0 +1,51 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "simple-import-sort", "import"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js", "**/*.ts", "**/*.tsx"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "error",
+          {
+            "groups": [
+              // `react` first, `next` second, then packages starting with a character
+              ["^react$", "^next", "^[a-z]"],
+              // Packages starting with `@`
+              ["^@"],
+              // Packages starting with `~`
+              ["^~"],
+              // Imports starting with `../`
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              // Imports starting with `./`
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              // Style imports
+              ["^.+\\.s?css$"],
+              // Side effect imports
+              ["^\\u0000"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
