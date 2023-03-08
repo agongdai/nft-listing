@@ -3,6 +3,7 @@ import GlobalAlert from 'components/GlobalAlert';
 import Heartbeat from 'components/Heartbeat';
 import SEO from 'components/SEO';
 import { BrowserRouter } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 import palette from 'themes/palette';
 
 // @todo Put light theme first
@@ -24,12 +25,14 @@ function App() {
           }
         `}
       </style>
-      <BrowserRouter basename='/'>
-        <Heartbeat />
-        <SEO />
-        <Routes />
-        <GlobalAlert />
-      </BrowserRouter>
+      <RecoilRoot>
+        <BrowserRouter basename='/'>
+          <Heartbeat />
+          <SEO />
+          <Routes />
+          <GlobalAlert />
+        </BrowserRouter>
+      </RecoilRoot>
     </main>
   );
 }

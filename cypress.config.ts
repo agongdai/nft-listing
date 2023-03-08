@@ -1,7 +1,7 @@
 import { defineConfig } from 'cypress';
 
 module.exports = defineConfig({
-  projectId: 'cmsdcf',
+  projectId: 'test',
   defaultCommandTimeout: 10_000,
   requestTimeout: 10_000,
   watchForFileChanges: false,

@@ -12,5 +12,35 @@ html[data-mode='dark'] body {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #fff;
+  background-image: linear-gradient(
+    to right top,
+    #364f6b,
+    #376381,
+    #367896,
+    #348da8,
+    #34a3b8,
+    #21aaca,
+    #09b0dc,
+    #00b5ef,
+    #64a4fb,
+    #ad8bee,
+    #e36bc4,
+    #fc5185
+  );
+}
+
+.container {
+  @apply max-w-[120rem] mx-[auto] p-5;
+}
+
+.card-corner {
+  background: linear-gradient(177.94deg, #fa1178 -36.77%, #c9fb03 306.78%);
+  @apply absolute top-0 right-0 rounded-tr-2xl rounded-bl-2xl w-[5rem] h-[5rem] flex justify-center items-center;
+}
+
+.modal {
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
