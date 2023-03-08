@@ -2,6 +2,7 @@
 
  - React 18: https://reactjs.org/
  - React Hooks: https://reactjs.org/
+ - TypeScript
  - Tailwind CSS: https://tailwindcss.com/
  - Recoil: https://recoiljs.org/
 
