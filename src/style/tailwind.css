@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100%;
 }
 
 html[data-mode='dark'],
@@ -15,6 +16,7 @@ body {
   font-size: 2rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #fff;
+  min-height: 100%;
   background-image: linear-gradient(
     to right top,
     #364f6b,
